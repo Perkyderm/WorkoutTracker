@@ -11,3 +11,5 @@ The app utilizes a Mongo database with a Mongoose schema.
 # Usage
 
 This <a hre="https://dry-tundra-83809.herokuapp.com/"> link </a> will take you to the deployed site.
+
+![alt](/public/ss1.png)
