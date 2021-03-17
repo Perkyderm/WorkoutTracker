@@ -15,11 +15,14 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // db Mongo
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/workout";
+var MONGODB_URI =
+  process.env.MONGODB_URI || "mongodb://localhost/WorkoutTracker";
 
 mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
   useFindAndModify: false,
+  useUnifiedTopology: true,
+  useCreateIndex: true,
 });
 
 // Routes
